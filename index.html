@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nogal · Café de barrio en Parque Rodó</title>
+  <meta name="description" content="Café de especialidad, pastelería casera y brunch en Parque Rodó, Montevideo. Mirá la carta, los horarios y cómo llegar.">
+  <meta name="theme-color" content="#F5EFE6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="container nav-in">
+      <a href="#inicio" class="logo" aria-label="Nogal, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V13"/><path d="M16 13c0-5 3-9 8-10 1 5-2 10-8 10z"/><path d="M16 19c0-4-3-7-8-7-1 4 2 8 8 7z"/></svg>
+        <span>nogal</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Secciones">
+        <a href="#carta">Carta</a>
+        <a href="#meriendas">Meriendas</a>
+        <a href="#lugar">El lugar</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#visitanos">Visitanos</a>
+      </nav>
+      <div class="nav-act">
+        <span class="status" id="status"><i></i><span></span></span>
+        <a href="#" class="btn btn-dark btn-sm js-wa nav-cta" data-msg="¡Hola Nogal! Quería reservar una mesa.">Reservar</a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Café de especialidad · Parque Rodó</p>
+        <h1>Un café de barrio, <em>hecho con tiempo.</em></h1>
+        <p class="lead">Tostamos en pequeñas tandas, horneamos cada mañana y te esperamos con una mesa al sol. Para desayunar, merendar o quedarte trabajando un rato.</p>
+        <div class="cta">
+          <a href="#carta" class="btn btn-dark">Ver la carta</a>
+          <a href="#visitanos" class="btn btn-line">Cómo llegar</a>
+        </div>
+        <a href="#resenas" class="rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><b>4,8</b> en Google · 312 reseñas</span>
+        </a>
+      </div>
+      <div class="hero-art">
+        <figure class="ph arch"><span>nogal</span><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1100&q=80" alt="Interior del café" onerror="this.remove()"></figure>
+        <figure class="ph round"><span></span><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" alt="Flat white con latte art" onerror="this.remove()"></figure>
+        <div class="note">
+          <b id="noteTitle">Hoy</b>
+          <span id="noteHours"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datos rápidos -->
+  <section class="container">
+    <ul class="facts">
+      <li><svg class="ic" viewBox="0 0 24 24"><path d="M5 9h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3c0 1 1 1 1 2s-1 1-1 2M12 3c0 1 1 1 1 2s-1 1-1 2"/></svg><div><b>Tostado propio</b><span>Granos de origen, molidos al momento</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><path d="M4 18c0-6 3-11 8-11s8 5 8 11z"/><path d="M12 7V4M8 12c1-2 2-3 4-3"/></svg><div><b>Pastelería del día</b><span>Horneada cada mañana en el local</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><path d="M2 9a16 16 0 0 1 20 0M5.5 12.5a11 11 0 0 1 13 0M9 16a6 6 0 0 1 6 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg><div><b>Wi-Fi y enchufes</b><span>Mesas cómodas para trabajar</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><circle cx="7" cy="8" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="4" cy="13" r="1.8"/><circle cx="20" cy="13" r="1.8"/><path d="M8 19c0-3 2-5 4-5s4 2 4 5a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"/></svg><div><b>Pet friendly</b><span>Vereda y patio para venir con tu perro</span></div></li>
+    </ul>
+  </section>
+
+  <!-- Carta -->
+  <section class="section" id="carta">
+    <div class="container">
+      <div class="head">
+        <div><p class="kicker">La carta</p><h2>Lo que servimos <em>todos los días</em></h2></div>
+        <p class="muted">Precios en pesos uruguayos. Tenemos leche de avena y de almendras, y opciones sin TACC: preguntanos por las del día.</p>
+      </div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Secciones de la carta"></div>
+      <div class="menu-card">
+        <div class="menu-list" id="menuList"></div>
+        <figure class="ph menu-img" id="menuImg"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meriendas -->
+  <section class="section dark" id="meriendas">
+    <div class="container">
+      <div class="head">
+        <div><p class="kicker">Para compartir</p><h2>Meriendas y <em>desayunos</em></h2></div>
+        <p>Se piden en el local o se reservan por WhatsApp para asegurarte la mesa.</p>
+      </div>
+      <div class="combos" id="combos"></div>
+    </div>
+  </section>
+
+  <!-- El lugar -->
+  <section class="section" id="lugar">
+    <div class="container place">
+      <div class="place-copy">
+        <p class="kicker">El lugar</p>
+        <h2>Una casa vieja del barrio, <em>con olor a café.</em></h2>
+        <p>Abrimos en 2019 en una casa de techos altos a dos cuadras del parque. Mantuvimos los pisos de pinotea y la claraboya, y sumamos una barra larga para que veas cómo se prepara tu café.</p>
+        <p>Somos un equipo chico. Conocemos a quienes vienen seguido y nos gusta que te quedes el tiempo que quieras.</p>
+        <ul class="ticks">
+          <li>Mesas adentro, en la vereda y en el patio</li>
+          <li>Café en grano para llevar a tu casa</li>
+          <li>Reservas para grupos y cumpleaños chicos</li>
+        </ul>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- Reseñas -->
+  <section class="section soft" id="resenas">
+    <div class="container">
+      <div class="rev-top">
+        <div class="score">
+          <b>4,8</b>
+          <div><span class="stars" aria-hidden="true">★★★★★</span><small>312 reseñas en Google</small></div>
+        </div>
+        <div><p class="kicker">Reseñas</p><h2>Lo que dicen <em>quienes vienen</em></h2></div>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-line">Dejar una reseña</a>
+      </div>
+      <div class="reviews">
+        <blockquote><span class="stars" aria-hidden="true">★★★★★</span><p>Merendamos dos por menos de mil pesos y estaba espectacular. El carrot cake es de lo mejor que probé.</p><cite><i>MF</i>Martina F.</cite></blockquote>
+        <blockquote><span class="stars" aria-hidden="true">★★★★★</span><p>Lugar tranquilo, linda atención y muy buen café. Voy a trabajar varias veces por semana y nunca me apuran.</p><cite><i>JP</i>Joaquín P.</cite></blockquote>
+        <blockquote><span class="stars" aria-hidden="true">★★★★★</span><p>El tostón de palta y el flat white, una combinación perfecta. Además se puede ir con el perro al patio.</p><cite><i>CS</i>Carolina S.</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visitanos -->
+  <section class="section" id="visitanos">
+    <div class="container visit">
+      <div class="visit-card">
+        <p class="kicker">Visitanos</p>
+        <h2>Te esperamos en <em>Parque Rodó</em></h2>
+        <p class="addr"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Blanes 1120 esq. Gonzalo Ramírez, Montevideo</p>
+        <table class="hours" id="hours" aria-label="Horarios"></table>
+        <div class="cta">
+          <a href="https://www.google.com/maps/search/?api=1&query=Parque+Rod%C3%B3,+Montevideo" target="_blank" rel="noopener" class="btn btn-dark">Cómo llegar</a>
+          <a href="#" class="btn btn-line js-wa" data-msg="¡Hola Nogal! Quería reservar una mesa.">Reservar por WhatsApp</a>
+        </div>
+        <p class="tiny">También estamos en <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a> · 097 226 657</p>
+      </div>
+      <div class="map"><iframe title="Mapa de ubicación" src="https://www.google.com/maps?q=Parque+Rod%C3%B3,+Montevideo&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="f-row">
+        <a href="#inicio" class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V13"/><path d="M16 13c0-5 3-9 8-10 1 5-2 10-8 10z"/><path d="M16 19c0-4-3-7-8-7-1 4 2 8 8 7z"/></svg><span>nogal</span></a>
+        <nav><a href="#carta">Carta</a><a href="#meriendas">Meriendas</a><a href="#lugar">El lugar</a><a href="#visitanos">Visitanos</a></nav>
+      </div>
+      <div class="f-bottom"><p>© <span id="year"></span> Nogal Café · Sitio de demostración</p><p>Diseño y desarrollo por <b>Synera</b></p></div>
+    </div>
+  </footer>
+
+  <!-- Barra móvil -->
+  <div class="mbar">
+    <a href="#carta">Carta</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Parque+Rod%C3%B3,+Montevideo" target="_blank" rel="noopener">Cómo llegar</a>
+    <a href="#" class="js-wa mbar-main" data-msg="¡Hola Nogal! Quería reservar una mesa.">Reservar</a>
+  </div>
+
+  <a href="#" class="wa-float js-wa" data-msg="¡Hola Nogal! Quería hacer una consulta." aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+  </a>
+
+  <!-- Galería ampliada -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Cerrar">&times;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+    <figure class="lb-fig" id="lbFig"></figure>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
